@@ -48,7 +48,7 @@ const handleTime = () => {
 
   if (timeDifference >= 0) {
     const { days, hours, minutes, seconds } = convertMs(`${timeDifference}`);
-    console.log(`${days}:${hours}:${minutes}:${seconds}`);
+    console.log(`${days}: ${hours}: ${minutes}: ${seconds}`);
 
     refs.daysEl.textContent = `${days}`;
     refs.hoursEl.textContent = `${hours}`;

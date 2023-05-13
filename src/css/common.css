@@ -20,3 +20,11 @@ img {
 button {
   cursor: pointer;
 }
+
+.field {
+  display: inline;
+}
+
+/* .label {
+  display: none;
+} */
