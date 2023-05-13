@@ -39,12 +39,6 @@ const options = {
   },
 };
 
-// console.log(refs.startBtnEl);
-// console.log(refs.daysEl);
-// console.log(refs.hoursEl);
-// console.log(refs.minutesEl);
-// console.log(refs.secondsEl);
-
 const fp = flatpickr(refs.fpEl, options);
 
 const handleTime = () => {
@@ -102,17 +96,3 @@ const addLeadingZero = value => {
 console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
 console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
 console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}
-
-// refs.fpEl.addEventListener('input', event => {
-//   const selectedDates = event.target.value;
-//   console.log(selectedDates);
-// });
-
-// const { fpEl, daysEl, hoursEl, minutesEl, secondsEl } = refs;
-
-// const attachToElement = (fpEl, daysEl, hoursEl, minutesEl, secondsEl) => {
-//   const timeLeftValue = `${daysEl}d ${hoursEl}h ${minutesEl}m ${secondsEl}s`;
-//   fpEl.textContent = selectedDates;
-// };
-
-// attachToElement(daysEl, hoursEl, minutesEl, secondsEl);
